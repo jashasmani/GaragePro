@@ -19,7 +19,7 @@ const Navbar = () => {
             {/* </a> */}
           </li>
           <li className="nav-li">
-            <DataUsageIcon /> <span className="nav-span">Sales</span>
+            <DataUsageIcon /> <span className="nav-span">Job Card</span>
           </li>
           <li className="nav-li">
             <PersonIcon /> <span className="nav-span">Customer</span>
