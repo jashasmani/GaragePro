@@ -2,13 +2,13 @@ import React from "react";
 import Navbar from "../navbar/Navbar";
 import "./Home.css";
 import Dashboard from "../dashboard/Dashboard";
+import SellerDashboard from "../seller jobcard/SellerJobcard";
 
 const Home = () => {
   return (
     <div className="main-home">
       <Navbar />
-      <Dashboard/>
-      {/* <div>
+      <div>
         <section class="hero">
           <div class="container">
             <h1>Professional Garage Services</h1>
@@ -65,17 +65,16 @@ const Home = () => {
             </div>
           </div>
         </section>
-
-        <footer class="footer" id="contact">
-          <div class="container">
-            <p>
-              Contact us:{" "}
-              <a href="mailto:info@garagepro.com">info@garagepro.com</a>
-            </p>
-            <p>&copy; 2024 GaragePro. All Rights Reserved.</p>
-          </div>
-        </footer>
-      </div> */}
+      </div>
+      <footer class="footer" id="contact">
+        <div class="container">
+          <p>
+            Contact us:{" "}
+            <a href="mailto:info@garagepro.com">info@garagepro.com</a>
+          </p>
+          <p>&copy; 2024 GaragePro. All Rights Reserved.</p>
+        </div>
+      </footer>
     </div>
   );
 };

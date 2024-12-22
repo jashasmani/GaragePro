@@ -5,6 +5,7 @@ import DataUsageIcon from "@mui/icons-material/DataUsage";
 import PersonIcon from "@mui/icons-material/Person";
 import FeedbackIcon from "@mui/icons-material/Feedback";
 import StoreIcon from "@mui/icons-material/Store";
+import AssignmentTurnedInIcon from '@mui/icons-material/AssignmentTurnedIn';
 import SearchIcon from "@mui/icons-material/Search";
 
 const Navbar = () => {
@@ -19,7 +20,7 @@ const Navbar = () => {
             {/* </a> */}
           </li>
           <li className="nav-li">
-            <DataUsageIcon /> <span className="nav-span">Job Card</span>
+            <AssignmentTurnedInIcon /> <span className="nav-span">Job Card</span>
           </li>
           <li className="nav-li">
             <PersonIcon /> <span className="nav-span">Customer</span>
@@ -32,7 +33,7 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
-      <div className="menu-right">
+      {/* <div className="menu-right">
         <div className="nav-search">
           <SearchIcon className="search-icon" />
           <input
@@ -41,7 +42,7 @@ const Navbar = () => {
             className="search-intput"
           />
         </div>
-      </div>
+      </div> */}
     </nav>
   );
 };

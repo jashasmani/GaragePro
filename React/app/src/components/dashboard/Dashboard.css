@@ -1,16 +1,14 @@
-/* Global Styles */
+Global Styles
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #f9f9f9;
   }
   
-  /* Dashboard Wrapper */
   .vehicle-dashboard {
     padding: 20px;
   }
   
-  /* Vehicle Card */
   .card {
     background-color: #fff;
     border-radius: 8px;
@@ -48,7 +46,6 @@ body {
     color: #dc3545;
   }
   
-  /* Service List Section */
   .service-list {
     background-color: #fff;
     border-radius: 8px;
@@ -63,7 +60,6 @@ body {
     text-align: center;
   }
   
-  /* Table Styles */
   table {
     width: 100%;
     border-collapse: collapse;

@@ -1,14 +1,21 @@
 import Login from "./components/login/Login.jsx";
 import Home from "./components/home page/Home.jsx";
-import "./App.css"
-import { BrowserRouter } from 'react-router-dom';
+import "./App.css";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import SellerJobcard from "./components/seller jobcard/SellerJobcard.jsx";
+import Navbar from "./components/navbar/Navbar.jsx";
 
 function App() {
   return (
-      <BrowserRouter>
-        {/* <Login /> */}
-        <Home/>
-      </BrowserRouter>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/login" element={<Login />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/sellerjobcard" element={<SellerJobcard />} />
+      </Routes>
+      {/* <Login /> */}
+      {/* <Home /> */}
+    </BrowserRouter>
   );
 }
 
