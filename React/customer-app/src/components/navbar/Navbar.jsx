@@ -1,16 +1,12 @@
 import React from "react";
 import "./Navbar.css";
 import SpeedIcon from "@mui/icons-material/Speed";
-import DataUsageIcon from "@mui/icons-material/DataUsage";
 import PersonIcon from "@mui/icons-material/Person";
 import FeedbackIcon from "@mui/icons-material/Feedback";
 import StoreIcon from "@mui/icons-material/Store";
 import AssignmentTurnedInIcon from "@mui/icons-material/AssignmentTurnedIn";
-import SearchIcon from "@mui/icons-material/Search";
 import { Link } from "react-router-dom";
-import Home from "../home page/Home";
-import SellerJobcard from "../seller jobcard/SellerJobcard";
-import HomeIcon from '@mui/icons-material/Home';
+import HomeIcon from "@mui/icons-material/Home";
 
 const Navbar = () => {
   return (
@@ -28,20 +24,15 @@ const Navbar = () => {
               <SpeedIcon /> <span className="nav-span">Dashboard</span>
             </Link>
           </li>
+
           <li className="nav-li">
-            <Link to="/sellerjobcard">
-              <AssignmentTurnedInIcon />
-              <span className="nav-span">Job Card</span>
+            <Link to="/profile">
+              <PersonIcon /> <span className="nav-span">Profile</span>
             </Link>
           </li>
           <li className="nav-li">
-            <Link to="/customer">
-              <PersonIcon /> <span className="nav-span">Customer</span>
-            </Link>
-          </li>
-          <li className="nav-li">
-            <Link to="/market">
-              <StoreIcon /> <span className="nav-span">Market</span>
+            <Link to="/accessories">
+              <StoreIcon /> <span className="nav-span">Accessories</span>
             </Link>
           </li>
           <li className="nav-li">

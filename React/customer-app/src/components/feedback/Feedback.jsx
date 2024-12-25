@@ -5,6 +5,7 @@ import Typography from "@mui/material/Typography";
 import "./Feedback.css";
 import Navbar from "../navbar/Navbar";
 import Footer from "../footer/Footer";
+import RadioGroupRating from "../rating/Rating";
 
 const Feedback = () => {
   const [feedbacks, setFeedbacks] = useState([]);
@@ -67,19 +68,10 @@ const Feedback = () => {
             max="5"
             onChange={handleInputChange}
           />
-          {/* <Typography component="legend">Uncontrolled</Typography> */}
-          <Rating
-            name="simple-uncontrolled"
-            onChange={(event, newValue) => {
-              console.log(newValue);
-            }}
-            defaultValue={2}
-            size="large"
-          />
+          <RadioGroupRating />
           <button onClick={handleAddFeedback}>Submit Feedback</button>
         </div>
 
-        {/* Feedback List */}
         <div className="feedback-list">
           {feedbacks.length > 0 ? (
             <table>
@@ -114,7 +106,7 @@ const Feedback = () => {
           )}
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </>
   );
 };

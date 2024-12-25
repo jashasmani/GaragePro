@@ -28,7 +28,6 @@ const User = mongoose.model("User", userSchema);
 app.post("/api/user", async (req, res) => {
   const { email, contactme, password } = req.body;
   try {
-    
     // Check if user already exists
     const existingUser = await User.findOne({
       $or: [{ email }, { contact: contactme }],
@@ -47,11 +46,10 @@ app.post("/api/user", async (req, res) => {
   }
 });
 
-// Login an existing user
+// Login
 app.get("/api/user/:contact/:password", async (req, res) => {
   const { contact, password } = req.params;
   try {
-    // Find the user
     const user = await User.findOne({ contact, password });
     if (!user) {
       return res.status(401).json({ message: "Invalid contact or password." });
@@ -64,7 +62,6 @@ app.get("/api/user/:contact/:password", async (req, res) => {
   }
 });
 
-// Start the server
 const PORT = 5000;
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);

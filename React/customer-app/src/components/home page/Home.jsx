@@ -1,8 +1,6 @@
 import React from "react";
 import Navbar from "../navbar/Navbar";
 import "./Home.css";
-import Dashboard from "../dashboard/Dashboard";
-import SellerDashboard from "../seller jobcard/SellerJobcard";
 
 const Home = () => {
   return (
@@ -66,7 +64,6 @@ const Home = () => {
           </div>
         </section>
       </div>
-      
     </div>
   );
 };

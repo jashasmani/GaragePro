@@ -2,16 +2,8 @@ import React, { useState } from "react";
 import axios from "axios";
 import { useNavigate, Link } from "react-router-dom";
 import { toast } from "react-toastify";
-// import {
-//   Email,
-//   Person,
-//   Lock,
-//   ArrowBack,
-//   Google,
-//   GitHub,
-// } from "@mui/icons-material";
 
-const DesignBlock = () => {
+const Login = ({ onLogin }) => {
   const [email, setEmail] = useState("");
   const [contact, setContact] = useState("");
   const [password, setPassword] = useState("");
@@ -28,7 +20,8 @@ const DesignBlock = () => {
       );
       console.log(response.data.id);
       localStorage.setItem("id", response.data.id);
-      nav("/");
+      onLogin();
+      // nav("/create-profile");
     } catch (error) {
       // setError(true);
       console.log("Invalid email or password");
@@ -214,4 +207,4 @@ const DesignBlock = () => {
   );
 };
 
-export default DesignBlock;
+export default Login;

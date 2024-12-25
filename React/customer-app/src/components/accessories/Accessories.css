@@ -19,7 +19,6 @@ h1 {
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Item Grid */
 .item-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -27,7 +26,6 @@ h1 {
   padding: 0 10px;
 }
 
-/* Item Card */
 .market-item {
   background: white;
   border-radius: 12px;
@@ -59,7 +57,7 @@ h1 {
   color: #2ecc71;
 }
 
-.market-item button {
+.add-to-cart {
   padding: 10px 20px;
   background: linear-gradient(135deg, #3498db, #2980b9);
   color: white;
@@ -70,11 +68,10 @@ h1 {
   transition: background 0.3s;
 }
 
-.market-item button:hover {
+.add-to-cart:hover {
   background: linear-gradient(135deg, #2980b9, #1f6fa1);
 }
 
-/* Cart Section */
 .cart {
   margin-top: 50px;
   padding: 20px;
@@ -106,7 +103,7 @@ h1 {
   border-bottom: none;
 }
 
-.cart li button {
+.rm {
   padding: 7px 15px;
   background: linear-gradient(135deg, #e74c3c, #c0392b);
   color: white;
@@ -116,11 +113,25 @@ h1 {
   transition: background 0.3s;
 }
 
-.cart li button:hover {
+.rm:hover {
   background: linear-gradient(135deg, #c0392b, #a5281e);
 }
 
-/* Empty Cart Message */
+.done {
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #2ecc71, #27ae60);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.done:hover {
+  background: linear-gradient(135deg, #27ae60, #1e8449);
+}
+
 .cart p {
   color: #7f8c8d;
   font-size: 1.2rem;
