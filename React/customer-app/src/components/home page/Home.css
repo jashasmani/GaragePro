@@ -1,14 +1,11 @@
 .main-home {
   width: 100%;
   min-height: 100%;
-}
-
-/* body {
   margin: 0;
   font-family: Arial, sans-serif;
   line-height: 1.6;
   color: #333;
-} */
+}
 
 .container {
   width: 90%;
@@ -16,52 +13,11 @@
   margin: 0 auto;
 }
 
-h1,
-h2,
-h3 {
-  margin: 0;
-  padding: 0;
-}
-
 a {
   text-decoration: none;
   color: inherit;
 }
 
-/* Header */
-.header {
-  background-color: #333;
-  color: #fff;
-  padding: 10px 0;
-}
-
-.header .logo {
-  font-size: 24px;
-  font-weight: bold;
-}
-
-.navbar {
-  float: right;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-  margin: 0;
-  padding: 0;
-}
-
-.nav-links li a {
-  color: #fff;
-  transition: color 0.3s ease;
-}
-
-.nav-links li a:hover {
-  color: #f39c12;
-}
-
-/* Hero Section */
 .hero {
   /* background: url("garage-bg.jpg") no-repeat center center/cover; */
   color: #fff;
@@ -92,7 +48,6 @@ a {
   background-color: #d35400;
 }
 
-/* About Section */
 .about {
   padding: 50px 0;
   background-color: #f4f4f4;
@@ -103,7 +58,7 @@ a {
   margin-bottom: 20px;
 }
 
-/* Services Section */
+
 .services {
   padding: 50px 0;
 }
@@ -131,7 +86,6 @@ a {
   margin-bottom: 10px;
 }
 
-/* Testimonials Section */
 .testimonials {
   padding: 50px 0;
   background-color: #333;
@@ -150,5 +104,4 @@ a {
   font-weight: bold;
 }
 
-/* Footer */
 

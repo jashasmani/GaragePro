@@ -14,50 +14,13 @@ import Feedback from "./components/feedback/Feedback.jsx";
 import Accessories from "./components/accessories/Accessories.jsx";
 import CreateProfile from "./components/create profile/CreateProfile.jsx";
 
-function App() {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const [profileCreated, setProfileCreated] = useState(false);
-
+export default function App() {
   return (
     <Router>
       <Routes>
-        <Route
-          path="/login"
-          element={<Login onLogin={() => setIsLoggedIn(true)} />}
-        />
-        <Route
-          path="/create-profile"
-          element={
-            isLoggedIn ? (
-              !profileCreated ? (
-                <CreateProfile
-                  onProfileCreate={() => setProfileCreated(true)}
-                />
-              ) : (
-                <Navigate to="/home" replace />
-              )
-            ) : (
-              <Navigate to="/login" replace />
-            )
-          }
-        />
-
-        <Route
-          path="/home"
-          element={
-            isLoggedIn ? (
-              profileCreated ? (
-                <Home />
-              ) : (
-                <Navigate to="/create-profile" replace />
-              )
-            ) : (
-              <Navigate to="/login" replace />
-            )
-          }
-        />
-
+        <Route path="/login" element={<Login />} />
         <Route path="/" element={<Home />} />
+        <Route path="/create-profile" element={<CreateProfile />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/feedback" element={<Feedback />} />
@@ -67,5 +30,3 @@ function App() {
     </Router>
   );
 }
-
-export default App;

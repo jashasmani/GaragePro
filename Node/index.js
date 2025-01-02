@@ -20,13 +20,14 @@ mongoose
 const userSchema = new mongoose.Schema({
   email: { type: String, required: true, unique: true },
   contact: { type: String, required: true, unique: true },
+  profileCreated: { type: Boolean, required: true },
   password: { type: String, required: true },
 });
 
 const User = mongoose.model("User", userSchema);
 
 app.post("/api/user", async (req, res) => {
-  const { email, contactme, password } = req.body;
+  const { email, contactme, password, profileCreated } = req.body;
   try {
     // Check if user already exists
     const existingUser = await User.findOne({
@@ -37,7 +38,12 @@ app.post("/api/user", async (req, res) => {
     }
 
     // Create and save the new user
-    const user = new User({ email, contact: contactme, password });
+    const user = new User({
+      email,
+      contact: contactme,
+      password,
+      profileCreated,
+    });
     await user.save();
     res.status(201).json({ message: "User registered successfully." });
   } catch (error) {

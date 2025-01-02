@@ -1,55 +1,54 @@
 .profile-page {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    font-family: Arial, sans-serif;
-    background: #f7f7f7;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  }
-  
-  .profile-page h1 {
-    text-align: center;
-    color: #2c3e50;
-  }
-  
-  .profile-details p {
-    margin: 10px 0;
-    font-size: 16px;
-  }
-  
-  .profile-details strong {
-    color: #34495e;
-  }
-  
-  .profile-form input,
-  .profile-form textarea {
-    width: 100%;
-    margin: 10px 0;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-  }
-  
-  .profile-form textarea {
-    resize: vertical;
-  }
-  
-  .save-button,
-  .edit-button {
-    padding: 10px 20px;
-    background: linear-gradient(135deg, #2ecc71, #27ae60);
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background 0.3s;
-  }
-  
-  .save-button:hover,
-  .edit-button:hover {
-    background: linear-gradient(135deg, #27ae60, #1e8449);
-  }
-  
+  max-width: 600px;
+  margin: 5rem auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background: #f7f7f7;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.profile-page h1 {
+  text-align: center;
+  color: #2c3e50;
+}
+
+.profile-details p {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.profile-details strong {
+  color: #34495e;
+}
+
+.profile-form input,
+.profile-form textarea {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.profile-form textarea {
+  resize: vertical;
+}
+
+.save-button,
+.edit-button {
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #2ecc71, #27ae60);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.save-button:hover,
+.edit-button:hover {
+  background: linear-gradient(135deg, #27ae60, #1e8449);
+}
